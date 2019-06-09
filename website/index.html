@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <img src="132.png" alt="" />
+    <img src="2.png" alt="" />
+    <img src="3.png" alt="" />
+    <img src="4.png" alt="" />
+    <img src="5.png" alt="" />
+    <img src="6.png" alt="" />
+    <img src="7.png" alt="" />
+    <img src="8.png" alt="" />
+    <img src="91.jpg" alt="" />
+    <a href="#/test">test</a>
+    <a href="#/test1">test1</a>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script src="./index.js"></script>
+    <script>
+      window.setTimeout(function() {
+        console.log(a.b)
+      }, 5000)
+      window.setTimeout(function() {
+        $.ajax({
+          url: 'http://127.0.0.1:3000/api/v1/wallpaper',
+          method: 'get'
+        }).done(function() {
+          console.log('ajax加载完毕')
+        })
+      }, 5000)
+    </script>
+    <!-- [retcode] invalid url: " -->
+    <!-- <script>
+    !(function (c, b, d, a) {
+      c[a] || (c[a] = {}); c[a].config = { pid: "hba2jsfapn@02e58eba6efaf2b", imgUrl: "http://127.0.0.1:3012/r.png?", sendResource: true };
+      with (b) with (body) with (insertBefore(createElement("script"), firstChild)) setAttribute("crossorigin", "", src = d)
+    })(window, document, "http://127.0.0.1:3012/arms/arms.js", "__bl");
+  </script> -->
+    <script>
+      !(function(c, b, d, a) {
+        c[a] || (c[a] = {})
+        c[a].config = {
+          pid: 'hba2jsfapn@02e58eba6efaf2b',
+          imgUrl: 'http://127.0.0.1:3012/r.png?',
+          sendResource: true,
+          enableSPA: true,
+          useFmp: true
+        }
+        with (b)
+          with (body)
+            with (insertBefore(createElement('script'), firstChild))
+              setAttribute('crossorigin', '', (src = d))
+      })(window, document, 'http://localhost:1300/index.js', '__bl')
+    </script>
+  </body>
+</html>
